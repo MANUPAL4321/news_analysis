@@ -9,7 +9,10 @@ import json
 import re
 from authlib.integrations.flask_client import OAuth
 
-
+nltk.download('averaged_perceptron_tagger')
+nltk.download("stopwords")
+nltk.download("punkt")
+nltk.download('universal_tagset')
 
 app = Flask(__name__)
 
