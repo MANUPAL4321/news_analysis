@@ -21,7 +21,7 @@ conn = psycopg2.connect(
         user="news_analyzer_user",
         password="yhX9tBQaUbhRuNxvbRc7QU6Lx61ByfKd",
         host="dpg-cnmmbli1hbls739haftg-a",
-        port=7250
+        port=5432
     )
 
 @app.route("/")
