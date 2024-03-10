@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLs from Database</title>
+   
+</head>
+<body>
+    <h1>history from Database</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>number of sentences</th>
+                <th>number of words</th>
+                <th>pos tags</th>
+                <th>cleaned text</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data_dict %}
+                <tr>
+                    <td>{{ i['url'] }}</td>
+                    <td>{{ i['no_of_sentences'] }}</td>
+                    <td>{{ i['no_of_words'] }}</td>
+                    <td>{{ i['post_tags'] }}</td>
+                    <td>{{ i['cleantext'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>

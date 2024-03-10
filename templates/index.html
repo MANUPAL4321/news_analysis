@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Analyzer</title>
+    <style>
+        /* Custom CSS for index.html */
+
+        /* Add background image */
+        body {
+            background-image: url('static/f.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* height: 100vh; */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the form vertically */
+        /* .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+
+        /* Increase the width of the form on larger screens */
+        @media (min-width: 768px) {
+            .container {
+                width: 50%;
+            }
+        }
+
+        /* Custom CSS for index.html (your existing styles) */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 300px;
+            text-align: center;
+            margin-left: 12px;
+        }
+        .form-control {
+            margin-bottom:13px;
+        }
+        .admin-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 15px;
+        }
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.container_main {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .admin-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+.admin-button:hover {
+    background-color: #218838;
+}
+
+/* Add more styles as needed */
+
+
+        /* ... (rest of your existing CSS styles) */
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <br><br>
+    <button style="float: right;" class="admin-button" onclick="redirectToAdminPage()">Admin</button>
+
+    <div style="text-align: center;">
+        <br><br>
+        <span>
+            <img src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg" alt="Indian Express" style="text-align: center;">
+
+        </span>
+    </div>
+    <div>
+
+    <!-- </div class="headlines">
+        <h2 style="text-align: center;">Explore the latest news articles with insightful analysis.</h2>
+        <h2 style="text-align: center;">We provide detailed information, key takeaways, and statistical data to help</h2>
+        <h2 style="text-align: center;">you understand the stories shaping the world.</h2>
+    <div> -->
+        
+    <div class="container_main" style="height: 300px;">
+        <form action="/check" method="post">
+            <div  class="form-group" >
+                <h3 style="text-align: center; color:lightcoral; ">
+                    Explore the latest news articles with insightful analysis. <br>
+                    We provide detailed information, key takeaways, and statistical data to help <br>
+                    you understand the stories shaping the world.
+                </h3>
+                <label for ="url" style="text-align: center;">Enter News Article URL:</label>
+                <input  type="text" class="form-control" id="url" name="url" required style="display: block; margin-right: 12px;">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <!-- <div>
+            <button class="admin-button" onclick="redirectToAdminPage()">Admin</button>
+        </div> -->
+    </div>
+
+
+    </div>
+    <!-- <h1 style="text-align: center; margin-bottom: 30px; color: red;">News Analyzer(INDIAN EXPRESS)</h1> -->
+    
+    <script>
+        function redirectToAdminPage() {
+            window.location.href = "/verify";  // Replace "/admin" with the actual path to your admin page
+        }
+    </script>
+</body>
+</html>
